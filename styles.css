@@ -99,14 +99,14 @@ h3, text{
     font-weight: 1.25em;
 }
 header{
-    background-color: var(--Green);
-    color: var(--White);
+    background-color: var(--green);
+    color: var(--white);
 }
 nav ul{
     display: flex;
     float: right;
-    background-color: var(--Orange);
-    color: var(--White);
+    background-color: var(--orange);
+    color: var(--white);
 }
 figure{
     display: grid;
