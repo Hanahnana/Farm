@@ -107,9 +107,9 @@ nav ul{
     background-color: var(--orange);
     color: var(--white);
 }
-figure{
+figure img{
     display: grid;
-
+    grid-template-columns: auto auto;
 }
 
 
