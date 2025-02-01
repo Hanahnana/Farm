@@ -54,7 +54,7 @@ table {
 /* -------------------- ROOT VARIABLES  -------------------- */
 :root {
     font-family: "Habibi", serif;
-    font-size: 1.25em;
+    
     --green:#06A816;
     --orange:#E75D02;
     --black:#000000;
@@ -94,7 +94,9 @@ h1{
 h2{
     font-weight: 1.75em;
 }
-
+h3 body{
+    font-weight: 1.25em;
+}
 header{
     background-color: var(--green);
     color: var(--white);
