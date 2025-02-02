@@ -101,16 +101,20 @@ header{
     background-color: var(--green);
     color: var(--white);
 }
-nav ul{
-    display: flex;
+nav a{
+    display: block;
     float: right;
     background-color: var(--orange);
-    color: var(--white);
     text-decoration: none;
     padding: 8px;
-    border-radius: 4px var(--white);
-
+    border-radius: 4px;
+    color: var(--white);
+    margin: 5px;
 }
+nav a .top{
+    padding: 8px, 20px;
+}
+
 figure img{
     display: grid;
     grid-template-columns: auto auto;
