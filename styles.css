@@ -104,8 +104,9 @@ header{
 header p{
     padding: 20px 0px;
 }
+
 nav a{
-    display: flex;
+    
     float: right;
     background-color: var(--orange);
     text-decoration: none;
@@ -116,9 +117,7 @@ nav a{
     border-style: solid;
     border-color: var(--white);
 }
-nav{
-    background-color: var(--green);
-}
+
 nav ul .btm{
     position: fixed;
     right: 1%;
@@ -128,15 +127,29 @@ nav ul .btm{
 figure{
     position: relative;
 }
-.friuts figure{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
+.fruits{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+.vegetables{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+figure{
+    flex: 25%;
+    padding: 15px;
+}
+figure img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 figure figcaption{
     position: absolute;
     top: 50%;
-    right: 50%;
+    right: 15%;
     transform: translate(-50%, -50%);
 }
 
@@ -147,7 +160,9 @@ figcaption{
     padding: 20px 30px;
 }
 section h3{
+    display: block;
     text-align: center;
+    margin: 20px;
 }
 
 p{
@@ -157,20 +172,30 @@ footer{
     background-color: var(--green);
     color: var(--white);
 }
-footer h3, address, dl{
+footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
-footer .hours{
-    align-self: start;
+footer .contact{
     grid-column: 1 / 4;
 }
-
+footer address{
+    grid-column: 2 / 4;
+}
+footer .hours{
+    grid-column: 3 / 4;
+}
+footer dl{
+    grid-column: 4 / 4;
+}
 
 footer small{
+    grid-column: span 4 / 5;
     text-align: center;
     background-color: var(--white);
     color: var(--green);
+    width: 100%;
 }
 
  
