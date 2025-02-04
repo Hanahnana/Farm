@@ -62,9 +62,6 @@ table {
 }
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
-body {
-    min-width: 428px;
-}
 
 @font-face {
     font-family: 'Habibi';
@@ -83,6 +80,7 @@ body {
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 body{
+    min-width: 428px;
     font-family: habibi;
 }
 h1, h2, h3{
@@ -100,6 +98,7 @@ h3 p{
 header{
     background-color: var(--green);
     color: var(--white);
+    text-align: center;
 }
 header p{
     padding: 20px 0px;
@@ -110,14 +109,22 @@ nav a{
     float: right;
     background-color: var(--orange);
     text-decoration: none;
-    padding: 8px 100px;
+    padding: 8px 104px;
     border-radius: 4px;
     color: var(--white);
-    margin: 5px;
+    margin: 10px;
     border-style: solid;
     border-color: var(--white);
 }
+nav .frt{
+    
+    padding: 8px 125px;
 
+}
+.fruits h2, p{
+    margin: 15px;
+    text-align: center;
+}
 nav ul .btm{
     position: fixed;
     right: 1%;
@@ -128,12 +135,12 @@ figure{
     position: relative;
 }
 .fruits{
-    display: inline-flex;
+    
     flex-wrap: wrap;
     padding: 4px;
 }
 .vegetables{
-    display: flex;
+    
     flex-wrap: wrap;
     padding: 15px;
 }
@@ -164,7 +171,9 @@ section h3{
     text-align: center;
     margin: 20px;
 }
-
+section h2{
+    text-align: center;
+}
 p{
     margin: 20px 0px;
 }
@@ -173,7 +182,7 @@ footer{
     color: var(--white);
 }
 footer {
-    display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
@@ -198,4 +207,389 @@ footer small{
     width: 100%;
 }
 
- 
+@media screen and(max-width: 600px){
+    body{
+        min-width: 428px;
+        font-family: habibi;
+    }
+    h1, h2, h3{
+        font-family: Irish-Grover;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.75em;
+    }
+    h3 p{
+        font-size: 1.25em;
+    }
+    header{
+        background-color: var(--green);
+        color: var(--white);
+        
+    }
+    header p{
+        padding: 20px 0px;
+    }
+    
+    nav a{
+        
+        float: right;
+        background-color: var(--orange);
+        text-decoration: none;
+        padding: 8px 104px;
+        border-radius: 4px;
+        color: var(--white);
+        margin: 10px;
+        border-style: solid;
+        border-color: var(--white);
+    }
+    nav .frt{
+        
+        padding: 8px 125px;
+    
+    }
+    .fruits h2, p{
+        margin: 15px;
+        text-align: center;
+    }
+    nav ul .btm{
+        position: fixed;
+        right: 1%;
+        bottom: 1%;
+        padding: 8px;
+    }
+    figure{
+        position: relative;
+    }
+    .fruits{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4px;
+    }
+    .vegetables{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    figure{
+        flex: 25%;
+        padding: 15px;
+    }
+    figure img{
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    figure figcaption{
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translate(-50%, -50%);
+    }
+    
+    figcaption{
+    
+        background-color: rgb(0, 0, 0, 75%);
+        color: var(--white);
+        padding: 20px 30px;
+    }
+    section h3{
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
+   
+    p{
+        margin: 20px 0px;
+    }
+    footer{
+        background-color: var(--green);
+        color: var(--white);
+    }
+    footer {
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    footer .contact{
+        grid-column: 1 / 4;
+    }
+    footer address{
+        grid-column: 2 / 4;
+    }
+    footer .hours{
+        grid-column: 3 / 4;
+    }
+    footer dl{
+        grid-column: 4 / 4;
+    }
+    
+    footer small{
+        grid-column: span 4 / 5;
+        text-align: center;
+        background-color: var(--white);
+        color: var(--green);
+        width: 100%;
+    }
+}
+@media screen and(max-width: 940px){
+    body{
+        min-width: 428px;
+        font-family: habibi;
+    }
+    h1, h2, h3{
+        font-family: Irish-Grover;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.75em;
+    }
+    h3 p{
+        font-size: 1.25em;
+    }
+    header{
+        background-color: var(--green);
+        color: var(--white);
+        
+    }
+    header p{
+        padding: 20px 0px;
+    }
+    
+    nav a{
+        
+        float: right;
+        background-color: var(--orange);
+        text-decoration: none;
+        padding: 8px 104px;
+        border-radius: 4px;
+        color: var(--white);
+        margin: 10px;
+        border-style: solid;
+        border-color: var(--white);
+    }
+    nav .frt{
+        
+        padding: 8px 125px;
+    
+    }
+    .fruits h2, p{
+        margin: 15px;
+        text-align: center;
+    }
+    nav ul .btm{
+        position: fixed;
+        right: 1%;
+        bottom: 1%;
+        padding: 8px;
+    }
+    figure{
+        position: relative;
+    }
+    .fruits{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4px;
+    }
+    .vegetables{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    figure{
+        flex: 25%;
+        padding: 15px;
+    }
+    figure img{
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    figure figcaption{
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translate(-50%, -50%);
+    }
+    
+    figcaption{
+    
+        background-color: rgb(0, 0, 0, 75%);
+        color: var(--white);
+        padding: 20px 30px;
+    }
+    section h3{
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
+    section h2{
+        text-align: center;
+    }
+    p{
+        margin: 20px 0px;
+    }
+    footer{
+        background-color: var(--green);
+        color: var(--white);
+    }
+    footer {
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    footer .contact{
+        grid-column: 1 / 4;
+    }
+    footer address{
+        grid-column: 2 / 4;
+    }
+    footer .hours{
+        grid-column: 3 / 4;
+    }
+    footer dl{
+        grid-column: 4 / 4;
+    }
+    
+    footer small{
+        grid-column: span 4 / 5;
+        text-align: center;
+        background-color: var(--white);
+        color: var(--green);
+        width: 100%;
+    }
+}
+@media screen and(max-width: 1000px){
+    body{
+        min-width: 428px;
+        font-family: habibi;
+    }
+    h1, h2, h3{
+        font-family: Irish-Grover;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.75em;
+    }
+    h3 p{
+        font-size: 1.25em;
+    }
+    header{
+        background-color: var(--green);
+        color: var(--white);
+       
+    }
+    header p{
+        padding: 20px 0px;
+    }
+    
+    nav a{
+        
+        float: right;
+        background-color: var(--orange);
+        text-decoration: none;
+        padding: 8px 104px;
+        border-radius: 4px;
+        color: var(--white);
+        margin: 10px;
+        border-style: solid;
+        border-color: var(--white);
+    }
+    nav .frt{
+        
+        padding: 8px 125px;
+    
+    }
+    .fruits h2, p{
+        margin: 15px;
+        text-align: center;
+    }
+    nav ul .btm{
+        position: fixed;
+        right: 1%;
+        bottom: 1%;
+        padding: 8px;
+    }
+    figure{
+        position: relative;
+    }
+    .fruits{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4px;
+    }
+    .vegetables{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    figure{
+        flex: 25%;
+        padding: 15px;
+    }
+    figure img{
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    figure figcaption{
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translate(-50%, -50%);
+    }
+    
+    figcaption{
+    
+        background-color: rgb(0, 0, 0, 75%);
+        color: var(--white);
+        padding: 20px 30px;
+    }
+    section h3{
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
+    section h2{
+        text-align: center;
+    }
+    p{
+        margin: 20px 0px;
+    }
+    footer{
+        background-color: var(--green);
+        color: var(--white);
+    }
+    footer {
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    footer .contact{
+        grid-column: 1 / 4;
+    }
+    footer address{
+        grid-column: 2 / 4;
+    }
+    footer .hours{
+        grid-column: 3 / 4;
+    }
+    footer dl{
+        grid-column: 4 / 4;
+    }
+    
+    footer small{
+        grid-column: span 4 / 5;
+        text-align: center;
+        background-color: var(--white);
+        color: var(--green);
+        width: 100%;
+    }
+}
+
